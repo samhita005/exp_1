@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: rgb(230, 171, 208);
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="/action_page.php">
+        <h2>Registration Page</h2>
+        <label>First Name:</label><br>
+        <input type="text" name="first_name" required><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="last_name" required><br><br>
+
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <label>Confirm Password:</label><br>
+        <input type="password" name="confirm_password" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="tel" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        <label>State:</label><br>
+        <input type="text" name="state" required><br><br>
+
+        <label>Country:</label><br>
+        <input type="text" name="country" required><br><br>
+
+        <select id = "select" name="select">
+            <option value="Course">Course</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="AIML">AIML</option>
+            <option value="EEE">EEE</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
